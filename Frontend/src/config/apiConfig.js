@@ -16,7 +16,7 @@ Example:
 =========================================
 */
 
-const PC_IP = "192.168.31.234"; // <-- CHANGE THIS to your PC's LAN IP (auto-set for this machine)
+const PC_IP = "192.168.31"; // <-- CHANGE THIS to your PC's LAN IP (auto-set for this machine)
 
 export const API_ROOT_URL = `http://${PC_IP}:5000`;
 
