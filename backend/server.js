@@ -33,7 +33,7 @@ app.use(express.json());
 ========================================= */
 app.use((req, res, next) => {
   console.log("\n=================================");
-  console.log("🔥 REQUEST RECEIVED");
+  console.log(" REQUEST RECEIVED");
   console.log("TIME:", new Date().toLocaleString());
   console.log("METHOD:", req.method);
   console.log("URL:", req.url);
@@ -115,7 +115,7 @@ async function findCustomerEmail(order) {
 
 // Register Customer
 app.post("/api/auth/register", async (req, res) => {
-  console.log("🚀 REGISTER API HIT");
+  console.log(" REGISTER API HIT");
   console.log("REGISTER REQUEST:", req.body);
 
   const { name, email, phone, password, address } = req.body;
@@ -943,6 +943,6 @@ app.get("/", (req, res) => {
 
 // Start Combined HTTP + WebSockets Server
 server.listen(PORT, "0.0.0.0", () => {
-  console.log(`🚀 Smart Delivery System Server API listening on http://0.0.0.0:${PORT}`);
-  console.log(`💬 Real-Time WebSockets active via Socket.IO engine`);
+  console.log(` Smart Delivery System Server API listening on http://0.0.0.0:${PORT}`);
+  console.log(` Real-Time WebSockets active via Socket.IO engine`);
 });

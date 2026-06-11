@@ -25,7 +25,3 @@ npm-debug.*
 **/AGENTS.md
 **/CLAUDE.md
 **/.claude/
-
-# documentation 
-API_DOCUMENTATION.md
-DEPLOYMENT.md
