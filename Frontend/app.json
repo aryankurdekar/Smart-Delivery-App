@@ -51,7 +51,8 @@
         {
           "color": "#FF6B00"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "extra": {
       "eas": {
