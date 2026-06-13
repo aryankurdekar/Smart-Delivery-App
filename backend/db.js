@@ -13,11 +13,15 @@ console.log("=================================");
 
 // TEMPORARY: Ignore DATABASE_URL and use individual DB settings
 const poolConfig = {
-  host: process.env.DB_HOST || "localhost",
+  host: process.env.DB_HOST,
   port: Number(process.env.DB_PORT || 5432),
-  user: process.env.DB_USER || "postgres",
+  user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME || "smart_delivery",
+  database: process.env.DB_NAME,
+
+  ssl: {
+    rejectUnauthorized: false,
+  },
 };
 
 const pool = new Pool(poolConfig);
