@@ -16,9 +16,9 @@ Example:
 =========================================
 */
 
-const PC_IP = "192.168.31"; // <-- CHANGE THIS to your PC's LAN IP (auto-set for this machine)
+// const PC_IP = "192.168.31"; // <-- CHANGE THIS to your PC's LAN IP (auto-set for this machine)
 
-export const API_ROOT_URL = `http://${PC_IP}:5000`;
+export const API_ROOT_URL = "https://smart-delivery-app.onrender.com";
 
 export const API_BASE_URL = `${API_ROOT_URL}/api`;
 
