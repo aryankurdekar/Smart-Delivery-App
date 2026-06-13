@@ -88,7 +88,7 @@ export function useDeliveryApp() {
   }, []);
 
   useEffect(() => {
-    configureNotifications();
+    // configureNotifications();
     refreshOrders();
     syncUsers();
     api.getRiderStatus().then((online) => {
